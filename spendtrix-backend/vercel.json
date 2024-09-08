@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/spendtrix-backend/src/index.js"
+      "dest": "spendtrix-backend/src/index.js"
     }
   ]
 }
