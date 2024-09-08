@@ -16,12 +16,9 @@ app.use(express.json());
 app.use(errorHandler);
 app.use(morgan('dev'));
 
-app.get("/" , async(req, res) => {
-  return res.status(200).json({
-    success:true,
-    message : "spendtrix is up and running" 
-  })
-} );
+app.get('/', (req, res) => {
+  res.send('Hello from Vercel!');
+});
 
 app.use('/api/auth', authRoutes);
 app.use('/api/categories', categoryRoutes);
