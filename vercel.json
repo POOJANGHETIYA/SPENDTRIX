@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "spendtrix-backend/src/index.js",
+      "src": "src/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "spendtrix-backend/src/index.js"
+      "dest": "src/index.js"
     }
   ]
 }
